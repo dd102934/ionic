@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Name</ion-label>
+    <ion-input type="text" [(ngModel)]="personName"></ion-input>
+  </ion-item>
+
+  <button ion-button block clear (click)="showGreeting(personName)">Show Greeting</button>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    I'm a footer!
+  </ion-toolbar>
+</ion-footer>
